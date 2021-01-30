@@ -1,8 +1,11 @@
+require("dotenv").config()
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Subtle Speaks`,
+    description: `Community Driven Innovation. Subtle Speaks CIC, Birmingham.`,
+    author: `https://penfolddesign.co.uk`,
+    siteURL: `https://subtle-speaks.co.uk`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -13,22 +16,42 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        typekit: {
+          id: process.env.TYPEKIT_ID,
+        },
       },
     },
+    {
+
+      resolve: `gatsby-source-strapi`,
+      options: {
+        apiURL: `https://subtle-speaks-back-end.herokuapp.com`,
+        contentTypes: [`blog-posts`, `users`, `categories`, `projects`, `research-projects`],
+        singleTypes: [`about-section`, `global-settings`, `partner-logos`, `research-section`, `landing-hero`],
+        queryLimit: 5000,
+
+      },
+
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    
+    {
+    resolve: `gatsby-plugin-manifest`,
+    options:{
+      name: `subtle-speaks-cic-2021`,
+      short_name:`speaks-gatsby`,
+      display: `minimal-ui`,
+      icon: `../src/images/gatsby-icon.png`
+    },
+  
+  
+  },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }

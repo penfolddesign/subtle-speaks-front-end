@@ -1,42 +1,55 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React, {useState, useEffect} from 'react'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+import Logo from '../images/speakslogo-black.png'
+
+const Header = () => {
+
+  const [fixedNav, setFixedNav] = useState(false);
+  const StickyNav = () =>{
+      // console.log(window.scrollY)
+
+      if(window.scrollY >= 70){
+          setFixedNav(true);
+      } else{
+          setFixedNav(false);
+
+      }
+  }
+
+  useEffect(()=>{
+      window.addEventListener('scroll', StickyNav);
+  })
+
+  if (typeof window !== "undefined") {
+    // eslint-disable-next-line global-require
+    require("smooth-scroll")('a[href*="#"]')
+  }
+
+return(
+
+
+<header className={ fixedNav ? 'main-navigation-header scroll-on' : 'main-navigation-header'}>
+    <div className="container header-container">
+       <a href="/">
+       <img src={Logo} alt="Subtle Speaks CIC Black Logo"/>
+       </a>
+       <div className="navigation-links mobile-hide">
+          <a href="/#about">About</a>
+          <a href="/#projects">Projects</a>
+          <a href="/#research">Research</a>
+          <a href="/blog">Blog</a>
+          <div className="button-container nav-cta">
+              <a href="/contact">Get in Touch</a>
+          </div>
+       </div>
     </div>
   </header>
-)
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+
+  )
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+
 
 export default Header
