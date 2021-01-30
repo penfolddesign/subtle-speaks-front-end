@@ -28,7 +28,9 @@ module.exports = {
 
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `https://subtle-speaks-back-end.herokuapp.com`,
+        apiURL: process.env.DEPLOY_URL
+        ? "https://subtle-speaks-back-end.herokuapp.com"
+        : "http://localhost:1337",
         contentTypes: [`blog-posts`, `users`, `categories`, `projects`, `research-projects`],
         singleTypes: [`about-section`, `global-settings`, `partner-logos`, `research-section`, `landing-hero`],
         queryLimit: 5000,
@@ -45,7 +47,6 @@ module.exports = {
       name: `subtle-speaks-cic-2021`,
       short_name:`speaks-gatsby`,
       display: `minimal-ui`,
-      icon: `../src/images/gatsby-icon.png`
     },
   
   
