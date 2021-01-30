@@ -88,7 +88,7 @@ const Partners = () => {
       
 
        
-        <section className="partners-section">
+        <section className="partners-section" style={{ backgroundImage: `url(https://res.cloudinary.com/dhh2ejp7p/image/upload/v1612022100/partners_background_fa801be2cb.jpg)` }}>
 
           <div className="container">
 

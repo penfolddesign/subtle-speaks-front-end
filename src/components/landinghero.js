@@ -25,7 +25,7 @@ const LandingHero = () => {
 
     return (
         <section className="landing-hero" style={{ backgroundImage: `url(${BackgroundImage})` }}>
-           <div className="container">
+           
                 <div className="hero-container" data-aos="fade-up">
                     <img className="hero-image" src={MeetingImage}/>
                     
@@ -40,7 +40,7 @@ const LandingHero = () => {
                     </div>
                 
                 </div>
-           </div>
+         
      
 
         </section>

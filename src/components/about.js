@@ -60,8 +60,8 @@ const About = () => {
                 <div className="container">
 
                 <div className="about-us-title">
-                        <h1>{info.node.Title}</h1>
-                        <p>{info.node.Description}</p>
+                        <h2>{info.node.Title}</h2>
+                        <p className="description-text">{info.node.Description}</p>
                 </div>
             
                 <div className="about-us-card-container">

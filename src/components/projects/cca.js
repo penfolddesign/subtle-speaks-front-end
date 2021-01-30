@@ -54,10 +54,11 @@ const CCA = (props) => {
         </div>
         </div>
 
-    <div className="cca-banner">
+    <div className="cca-banner" style={{ backgroundImage: `url(https://res.cloudinary.com/dhh2ejp7p/image/upload/v1612021205/cca_banner_78156ce155.jpg)` }}>
         <div className="container">
       
-                    <h4>Download the  Get Fit w/ Solihull Moors PDF</h4>
+                    <h3>Get Fit with Solihull Moors</h3>
+                    <p>Click the button below to get your FREE PDF.</p>
 
                     <div className="pdf-button button-container">
 

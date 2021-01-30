@@ -5,7 +5,7 @@ import Moment from "react-moment";
 import Layout from "../components/layout";
 import Markdown from "react-markdown";
 import useSiteMetaData from '../hooks/use-site-metadata';
-
+import SEO from '../components/seo'
 
 import SingleBackground from '../images/blogbackground.jpg'
 import { Icon, InlineIcon } from '@iconify/react';
@@ -67,6 +67,16 @@ const SingleBlog = ({data, location}) => {
     const {siteURL} = useSiteMetaData();
 
     return (
+        <>
+        <SEO
+        
+        title={blog.Title}
+        description={blog.Excerpt}
+        lang="en"
+        
+        
+        
+        />
         <Layout>
             <div className="blogheader" style={{ backgroundImage: `url(${SingleBackground})` }}></div>
         
@@ -146,6 +156,7 @@ const SingleBlog = ({data, location}) => {
 
 
         </Layout>
+        </>
     )
 }
 

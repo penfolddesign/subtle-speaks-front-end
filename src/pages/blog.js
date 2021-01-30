@@ -10,6 +10,7 @@ import clockCircleOutlined from '@iconify/icons-ant-design/clock-circle-outlined
 
 import Aos from 'aos'
 import "aos/dist/aos.css";
+import SEO from "../components/seo";
 
 
 
@@ -63,7 +64,7 @@ const Blog = ({ data }) => {
 
   return(
     <Layout>
-
+      <SEO title="Blog"/>
     <section className="blog-page">
 
     <div className="container">

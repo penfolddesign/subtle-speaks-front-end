@@ -37,6 +37,7 @@ const EPC = () => {
 
 
     return (
+       <>
         <div className="epc-container">
             <div className="container">
             <div data-aos="fade-left">
@@ -54,6 +55,7 @@ const EPC = () => {
                </div>
             </div>
         </div>
+       </>
     )
 }
 
