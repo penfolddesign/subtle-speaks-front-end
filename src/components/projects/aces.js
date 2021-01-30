@@ -52,12 +52,15 @@ const ACES = (props) => {
             
             />
             </div>
+
+
              <div className="markdown-content" markdown="1" >
              <strong><p>About this project:</p></strong>
              <ReactMarkdownWithHtml source={result.MainContent} allowDangerousHtml />
              </div>
         </div>
         </div>
+        
         <SocialSection/>
         </>
     )
