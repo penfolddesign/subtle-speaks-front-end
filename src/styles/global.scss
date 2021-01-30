@@ -154,7 +154,7 @@ html,body{
         border-top: 1px solid rgba(0,0,0,0.1);
         display: none;
         place-items: center;
-        transition: all 0.2s linear;
+       
         
 
     }
@@ -162,7 +162,7 @@ html,body{
 
 .menu-active{
     height: 260px;
-    transition: all 0.1s linear;
+
     
     a{
         display: grid;

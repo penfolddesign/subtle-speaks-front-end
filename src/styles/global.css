@@ -164,14 +164,10 @@ html, body {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   display: none;
   place-items: center;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
 }
 
 .menu-active {
   height: 260px;
-  -webkit-transition: all 0.1s linear;
-  transition: all 0.1s linear;
   border-bottom: 5px solid var(--heading-color);
 }
 
