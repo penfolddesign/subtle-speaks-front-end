@@ -471,6 +471,9 @@ header {
   .about-us-card-container .card-container .card-image {
     height: auto;
   }
+  .about-us-card-container .card-container .card-content p {
+    text-align: center;
+  }
 }
 
 .about-us-card-container .flex-reverse .card-content {
