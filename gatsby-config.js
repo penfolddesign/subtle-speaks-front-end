@@ -41,13 +41,13 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     
-    {
-    resolve: `gatsby-plugin-manifest`,
-    options:{
-      name: `subtle-speaks-cic-2021`,
-      short_name:`speaks-gatsby`,
-      display: `minimal-ui`,
-    },
+    // {
+    // resolve: `gatsby-plugin-manifest`,
+    // options:{
+    //   name: `subtle-speaks-cic-2021`,
+    //   short_name:`speaks-gatsby`,
+    //   display: `minimal-ui`,
+    // },
   
   
   },
