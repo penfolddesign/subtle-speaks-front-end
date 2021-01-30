@@ -41,7 +41,7 @@ const CCA = (props) => {
       <ProjectMain
             
             title={result.Name}
-            description={result.Description}
+            description={result.MainContent}
             image={result.ProjectImage.childImageSharp.fluid}
 
             />
@@ -49,7 +49,7 @@ const CCA = (props) => {
 
             <div className="markdown-content" markdown="1">
             <strong><p>About this project:</p></strong>
-                <Markdown source={result.MainContent} escapeHTML={false}/>
+                <Markdown source={result.Description} escapeHTML={false}/>
             </div>
         </div>
         </div>

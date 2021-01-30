@@ -47,7 +47,7 @@ const ACES = (props) => {
             <ProjectMain
             
             title={result.Name}
-            description={result.Description}
+            description={result.MainContent}
             source="https://res.cloudinary.com/dhh2ejp7p/video/upload/v1612018734/FINAL_0dce5e5291.mp4"
             
             />
@@ -56,11 +56,11 @@ const ACES = (props) => {
 
              <div className="markdown-content" markdown="1" >
              <strong><p>About this project:</p></strong>
-             <ReactMarkdownWithHtml source={result.MainContent} allowDangerousHtml />
+             <ReactMarkdownWithHtml source={result.Description} allowDangerousHtml />
              </div>
         </div>
         </div>
-        
+
         <SocialSection/>
         </>
     )

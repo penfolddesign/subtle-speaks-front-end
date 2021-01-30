@@ -43,14 +43,14 @@ const EPC = () => {
                 <ProjectMain
                 
                 title={result.Name}
-                description={result.Description}
+                description={result.MainContent}
                 image={result.ProjectImage.childImageSharp.fluid}
                 
                 />
             </div>
                <div className="markdown-content">
                 <strong><p>About this project:</p></strong>
-                <ReactMarkdownWithHtml source={result.MainContent} allowDangerousHtml/>
+                <ReactMarkdownWithHtml source={result.Description} allowDangerousHtml/>
                </div>
             </div>
         </div>
