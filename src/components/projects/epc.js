@@ -49,7 +49,9 @@ const EPC = () => {
                 <ProjectMain
                 
                 title="Project EPC"
-                description="Lorem malesuada lectus eu urna dictum arcu hendrerit sapien. Tortor eget blandit vel sed justo."
+                description="A monthly network to provide beneficial access to
+                knowledge, practical skills and existing relationships within the creative
+                industries."
                 image={result.ProjectImage.publicURL}
                 
                 />

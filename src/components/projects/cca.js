@@ -43,7 +43,8 @@ const CCA = (props) => {
       <ProjectMain
             
             title="Project CCA"
-            description="Lorem malesuada lectus eu urna dictum arcu hendrerit sapien. Tortor eget blandit vel sed justo."
+            description="A mission to create environments that applauds and nurtures young people&#39;s
+            physical and mental outlook."
             image={result.ProjectImage.publicURL}
 
             />
