@@ -638,7 +638,7 @@ header {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  height: 75%;
+  height: 72%;
 }
 
 .about-us-card-container .card-container .card-image .item__body p {
