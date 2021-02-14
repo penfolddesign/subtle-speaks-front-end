@@ -35,7 +35,7 @@ const ResearchSection = () => {
             <div className="container">
                 <h2>We are on a mission to change the industry.</h2>
                 <p className="description-text" style={{textAlign: 'center'}}>
-                We are conducting continuous research to enhance our projects and learn more about the issues we aim to tackle. Read some of our recent research projects below.
+                We are conducting continuous research to enhance our projects and learn more about the issues we aim to tackle. Read some further research surrounding these societal issues below.
                 </p>
                 <div className="research-container">
                 {data.allStrapiResearchProjects.edges.map(project =>(
