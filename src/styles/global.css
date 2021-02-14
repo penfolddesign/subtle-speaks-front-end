@@ -1420,7 +1420,10 @@ header {
 }
 
 .pdf-button {
-  background-color: white;
+  background-color: rgba(225, 255, 255, 0.2);
+  border: 1px solid white;
+  color: white;
+  margin: 0 auto;
   max-width: 400px;
   height: 50px;
   font-size: 19px;
@@ -1431,6 +1434,7 @@ header {
 .pdf-button:hover {
   background-color: #dfdfdf;
   cursor: pointer;
+  color: black;
 }
 
 .cca-banner {
