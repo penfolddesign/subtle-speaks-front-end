@@ -7,6 +7,10 @@ import ProjectBox from '../components/projects/ProjectBox'
 import ProjectBoxContainer from '../components/projects/ProjectBoxContainer'
 
 import ProjectImage from '../images/cca-banner.jpeg'
+
+
+import filePDF from '../images/GetFitWithSolihullMoors.pdf'
+
 const ProjectCCA = ({data}) => {
 
 
@@ -72,7 +76,7 @@ const ProjectCCA = ({data}) => {
                        <h3>Get Fit with Solihull Moors</h3>
                        <p>Click the button below to get your FREE PDF.</p>
                        <div class="pdf-button button-container">
-                           <a>DOWNLOAD</a>
+                           <a href={filePDF} target="_blank">DOWNLOAD</a>
                         </div>
                     </div>
                 </div>
