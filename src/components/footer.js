@@ -73,7 +73,7 @@ const Footer = () => {
       </ul>
     </div> */}
       <img src={Logo} alt="" style={{margin: '0 auto'}}/>
-     <span>Subtle Speaks LTD is a registered CIC company based in the UK. Company No: 12166801. Built by <a href="https://penfolddesign.co.uk" style={{color: 'inherit', textDecoration: 'underline'}}>Penfold Design.</a> </span>
+     <span>Subtle Speaks is a registered CIC (Community Interest Company) based in the UK. Company No: 12166801. Built by <a href="https://penfolddesign.co.uk" style={{color: 'inherit', textDecoration: 'underline'}}>Penfold Design.</a> </span>
      </div>
      </section>
 
