@@ -4,6 +4,7 @@ import {graphql, Link, useStaticQuery} from 'gatsby'
 import Markdown from 'react-markdown';
 import SocialSection from '../social';
 
+import {AnchorLink} from 'gatsby-plugin-anchor-links'
 
 const ACES = (props) => {
 
@@ -22,6 +23,8 @@ const ACES = (props) => {
                   ...GatsbyImageSharpFluid
                 }
               }
+
+              publicURL
             }
           }
 
@@ -41,27 +44,19 @@ const ACES = (props) => {
     return (
 
         <>
-        <div className="container">
+   
             <div className="aces-container">
-            <div data-aos="fade-left">
+            <AnchorLink to="/project-aces" stripHash>
             <ProjectMain
             
-            title={result.Name}
-            description={result.MainContent}
-            source="https://res.cloudinary.com/dhh2ejp7p/video/upload/v1612018734/FINAL_0dce5e5291.mp4"
+            title="Project ACES"
+            description="Lorem malesuada lectus eu urna dictum arcu hendrerit sapien. Tortor eget blandit vel sed justo."
+            image={result.ProjectImage.publicURL}
             
             />
-            </div>
-
-
-             <div className="markdown-content" markdown="1" >
-             <strong><p>About this project:</p></strong>
-             <ReactMarkdownWithHtml source={result.Description} allowDangerousHtml />
-             </div>
-        </div>
+           </AnchorLink>
         </div>
 
-        <SocialSection/>
         </>
     )
 }

@@ -7,6 +7,8 @@ import instagramFilled from '@iconify/icons-ant-design/instagram-filled';
 import facebookFilled from '@iconify/icons-ant-design/facebook-filled';
 import mailFilled from '@iconify/icons-ant-design/mail-filled';
 
+import Logo from '../images/speakslogo-black.png'
+
 
 const Footer = () => {
 
@@ -36,6 +38,7 @@ const Footer = () => {
 
 
     return (
+      <>
      <section className="footer">
 
         <div className="container">
@@ -58,10 +61,23 @@ const Footer = () => {
             </a>
                 </div>
             </div>
-            <span>Subtle Speaks LTD.is a registered Community Interest Company (CIC). </span>
-        </div>
+       
 
+    {/* <div className="footer-nav-links">
+      <ul>
+        <li><a href="/#about">About Us</a></li>
+        <li><a href="/#about">Projects</a></li>
+        <li><a href="/#about">Research</a></li>
+        <li><a href="/#about">Blog</a></li>
+        <li><a href="/#about">Contact</a></li>
+      </ul>
+    </div> */}
+      <img src={Logo} alt="" style={{margin: '0 auto'}}/>
+     <span>Subtle Speaks LTD is a registered CIC company based in the UK. Company No: 12166801. Built by <a href="https://penfolddesign.co.uk" style={{color: 'inherit', textDecoration: 'underline'}}>Penfold Design.</a> </span>
+     </div>
      </section>
+
+     </>
     )
 }
 

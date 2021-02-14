@@ -42,7 +42,7 @@ const ResearchSection = () => {
 
                 <>
                    <Link to= {`/research/${project.node.slug}`}>
-                        <div className="research-link">
+                        <div className="research-link" data-aos="fade-up">
 
                        <div className="research-title">
                             <span className={project.node.RelatedProject}> Project {project.node.RelatedProject}</span>

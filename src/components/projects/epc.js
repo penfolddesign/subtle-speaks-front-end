@@ -2,6 +2,9 @@ import React from 'react'
 import {graphql, Link, useStaticQuery} from 'gatsby'
 import Markdown from 'react-markdown';
 import ProjectMain from '../projects/projectmain'
+import {AnchorLink} from 'gatsby-plugin-anchor-links'
+
+
 
 const EPC = () => {
 
@@ -18,6 +21,8 @@ const EPC = () => {
                   ...GatsbyImageSharpFluid
                 }
               }
+
+              publicURL
             }
           }
 
@@ -39,21 +44,17 @@ const EPC = () => {
     return (
        <>
         <div className="epc-container">
-            <div className="container">
-            <div data-aos="fade-left">
+           
+        <AnchorLink to="/project-epc" stripHash>
                 <ProjectMain
                 
-                title={result.Name}
-                description={result.MainContent}
-                image={result.ProjectImage.childImageSharp.fluid}
+                title="Project EPC"
+                description="Lorem malesuada lectus eu urna dictum arcu hendrerit sapien. Tortor eget blandit vel sed justo."
+                image={result.ProjectImage.publicURL}
                 
                 />
-            </div>
-               <div className="markdown-content">
-                <strong><p>About this project:</p></strong>
-                <ReactMarkdownWithHtml source={result.Description} allowDangerousHtml/>
-               </div>
-            </div>
+            </AnchorLink>
+            
         </div>
        </>
     )

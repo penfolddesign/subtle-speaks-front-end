@@ -3,7 +3,6 @@ import React, {useState, useEffect} from 'react'
 import {graphql, useStaticQuery} from 'gatsby'
 
 import Logo from '../images/speakslogo-black.png'
-import LogoWhite from '../images/speakslogo-white.png'
 
 import { Icon, InlineIcon } from '@iconify/react';
 import linkedinFilled from '@iconify/icons-ant-design/linkedin-filled';
@@ -14,7 +13,7 @@ import {AnchorLink} from 'gatsby-plugin-anchor-links'
 import menuOutline from '@iconify/icons-eva/menu-outline';
 import closeFill from '@iconify/icons-eva/close-fill';
 
-const Header = () => {
+const OtherHeader = () => {
 
   const [fixedNav, setFixedNav] = useState(false);
   const StickyNav = () =>{
@@ -41,36 +40,37 @@ const Header = () => {
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
 
-  const data = useStaticQuery(graphql`
+    const data = useStaticQuery(graphql`
   
-  query IndexSocials{
-
-    strapiGlobalSettings {
+    query OtherIndexSocials{
   
-          SocialLinks {
-            Facebook
-            Instagram
-            LinkedIn
-        
+      strapiGlobalSettings {
+    
+            SocialLinks {
+              Facebook
+              Instagram
+              LinkedIn
+          
+        }
       }
+  
     }
+    
+    
+    
+    `)
+  
+    const result = data.strapiGlobalSettings.SocialLinks
 
-  }
-  
-  
-  
-  `)
-
-  const result = data.strapiGlobalSettings.SocialLinks
 
 return(
 
 
-<header className={ fixedNav ? 'main-navigation-header scroll-on' : 'main-navigation-header'}>
-    <div className="container header-container">
+<header className='main-navigation-header other-header'>
+<div className="container header-container">
        <AnchorLink to="/" stripHash>
 
-       <img src={fixedNav? Logo : LogoWhite} alt="Subtle Speaks CIC Black Logo"/>
+       <img src={Logo} alt="Subtle Speaks CIC Black Logo"/>
 
 
        </AnchorLink>
@@ -84,7 +84,7 @@ return(
               
     </div>
     <div className="mobile-menu desktop-hide" onClick={handleClick}>
-        <Icon icon={ click ? closeFill : menuOutline} style={{color: 'white'}}/>
+        <Icon icon={ click ? closeFill : menuOutline} style={{color: click ? 'white' : 'black'}}/>
     </div>
     </div>
    
@@ -123,4 +123,4 @@ return(
 
 
 
-export default Header
+export default OtherHeader

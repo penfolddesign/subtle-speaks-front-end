@@ -2,7 +2,7 @@ import React from 'react'
 import {graphql, Link} from 'gatsby'
 import Img from 'gatsby-image'
 import Moment from "react-moment";
-import Layout from "../components/layout";
+import OtherLayout from "../components/otherLayout";
 import Markdown from "react-markdown";
 import useSiteMetaData from '../hooks/use-site-metadata';
 
@@ -46,15 +46,21 @@ const SingleResearch = ({data, location}) => {
     
 
     return (
-       <Layout>
+       <OtherLayout>
 
             <section className="single-research-container">
+                    <div className="research-banner">
+                        <div className="content">
+                        <span>Project {research.RelatedProject} - Research Project</span>
+                    <h1>{research.Title}.</h1>
+                        </div>
+                    </div>
                     <div className="container">
                             <div>
                                     
-
-                                    <div className="blog-content">
-                                    <h1>{research.Title}</h1>
+                            <h3 style={{textAlign: 'center', fontSize: '28px'}}>{research.Title}</h3>
+                                    <div className="blog-content research-content">
+                                
                                     <Markdown source={research.Content} escapeHtml={false}/>
                                     
 
@@ -109,7 +115,7 @@ const SingleResearch = ({data, location}) => {
                        
             </section>
 
-       </Layout>
+       </OtherLayout>
     )
 }
 

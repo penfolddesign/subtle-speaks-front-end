@@ -2,7 +2,7 @@ import React from 'react'
 import {graphql, Link} from 'gatsby'
 import Img from 'gatsby-image'
 import Moment from "react-moment";
-import Layout from "../components/layout";
+import OtherLayout from "../components/otherLayout";
 import Markdown from "react-markdown";
 import useSiteMetaData from '../hooks/use-site-metadata';
 import SEO from '../components/seo'
@@ -77,7 +77,7 @@ const SingleBlog = ({data, location}) => {
         
         
         />
-        <Layout>
+        <OtherLayout>
             <div className="blogheader" style={{ backgroundImage: `url(${SingleBackground})` }}></div>
         
             <div className="container blog-single-container">
@@ -155,7 +155,7 @@ const SingleBlog = ({data, location}) => {
             </div>
 
 
-        </Layout>
+        </OtherLayout>
         </>
     )
 }

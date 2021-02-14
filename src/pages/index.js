@@ -34,12 +34,12 @@ const IndexPage = () => {
       <SEO  title="Home"/>
       <LandingHero/>
       <About/>
-      <SocialSection/>
+
+  
       <Projects/>
-      {/* <Partners/> */}
       <ResearchSection/>
-      <Partners/>
       <IndexBlog/>
+      {/* <SocialSection/> */}
     </Layout>
     </>
   )

@@ -1,6 +1,7 @@
 import React from 'react'
 import {graphql, useStaticQuery} from 'gatsby';
 import Img from 'gatsby-image/withIEPolyfill';
+import Partners from './partners';
 
 const About = () => {
 
@@ -65,55 +66,72 @@ const About = () => {
                 </div>
             
                 <div className="about-us-card-container">
-                        <div className="card-container" data-aos="fade-up">
+                        <div className="card-container" >
 
-                            <div className="card-image">
-                                <Img fluid={info.node.AboutUsImage.childImageSharp.fluid} 
-                                    objectFit="contain"
-                                    objectPosition="50% 50%"
-                                
-                                />
-                            </div>
+                        <div className="card-image">
+                            <a href="#0" aria-labelledby="vision"></a>
+                                <Img fluid={info.node.AboutUsImage.childImageSharp.fluid}
+                                 objectFit="cover"
+                                 objectPosition="50% 50%" />
 
-                            <div className="card-content">
-                                <h2>Our Mission</h2>
-                                <p>{info.node.AboutUs}</p>
+                                 <div className="item__overlay">
+                                   
+                                         <h2 id="vision" aria-hidden="true">MISSION</h2>
+
+                                        <div className="item__body">
+                                            <p>{info.node.AboutUs}</p>
+                                        </div>
+                                 </div> 
                             </div>
 
                         </div>
-                        <div className="card-container flex-reverse" data-aos="fade-up">
+                        <div className="card-container" >
 
                             <div className="card-image">
+                            <a href="#0" aria-labelledby="vision"></a>
                                 <Img fluid={info.node.WhatWeDoImage.childImageSharp.fluid}
                                  objectFit="cover"
                                  objectPosition="50% 50%" />
-                            </div>
 
-                           <div className="card-content">
-                                <h2>Our Vision</h2>
-                                <p>{info.node.WhatWeDo}</p>
-                           </div>
+                                 <div className="item__overlay">
+                                   
+                                         <h2 id="vision" aria-hidden="true">Vision</h2>
+
+                                        <div className="item__body">
+                                            <p>{info.node.WhatWeDo}</p>
+                                        </div>
+                                 </div> 
+                            </div>
 
                         </div>
-                        <div className="card-container"data-aos="fade-up"> 
+                        <div className="card-container"> 
 
-                            <div className="card-image">
+                        <div className="card-image">
+                            <a href="#0" aria-labelledby="values"></a>
                                 <Img fluid={info.node.SolutionImage.childImageSharp.fluid}
-                                 objectFit="contain"
+                                 objectFit="cover"
                                  objectPosition="50% 50%" />
-                            </div>
 
-                            <div className="card-content">
-                                <h2>Our Values</h2>
-                                <p>{info.node.OurSolution}</p>
+                                 <div className="item__overlay">
+                                   
+                                         <h2 id="vision" aria-hidden="true">Values</h2>
+
+                                        <div className="item__body">
+                                            <p>{info.node.OurSolution}</p>
+                                        </div>
+                                 </div> 
                             </div>
 
                         </div>
                 </div>
+
+                <Partners/>
 
 
                 </div>
            ))}
+
+        
           
        </section>
     )

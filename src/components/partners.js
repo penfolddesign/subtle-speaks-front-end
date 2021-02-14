@@ -16,15 +16,6 @@ const Partners = () => {
             Logos {
               alternativeText
               url
-              formats{
-                thumbnail{
-                  childImageSharp{
-                    fixed(quality: 100){
-                      ...GatsbyImageSharpFixed_noBase64
-                    }
-                  }
-                }
-              }
               
             
           }
@@ -46,7 +37,7 @@ const Partners = () => {
    
     const settings = {
 
-      dots: true,
+      dots: false,
       
       arrows: true,
       infinite: true,
@@ -88,21 +79,19 @@ const Partners = () => {
       
 
        
-        <section className="partners-section" style={{ backgroundImage: `url(https://res.cloudinary.com/dhh2ejp7p/image/upload/v1612022100/partners_background_fa801be2cb.jpg)` }}>
-
-          <div className="container">
+        
+          <div className="partners">
 
             <div className="partner-content">
             <div className="partner-title">
-            <h3>Who we work with</h3>
-            <p>We working with numerous organisations and charities throughout the UK, who believe in the same things we do.</p>
+            <h3>Proudly partnered with</h3>
             </div>
             </div>
            
             <Slider {...settings}>
             {data.logos.Logos.map(image =>(
                <div className="item">
-                <Img fixed={image.formats.thumbnail.childImageSharp.fixed} key={image.id}/>
+                <img src={image.url} alt=""/>
                 <span key={image.id}>{image.alternativeText}</span>
               </div> 
              ))}
@@ -111,7 +100,7 @@ const Partners = () => {
 
           </div>
 
-        </section>
+  
   
             
             

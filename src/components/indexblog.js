@@ -50,7 +50,7 @@ const IndexBlog = () => {
     return (
         <section className="index-blog">
             <div className="container">
-                <h2>See what we've been up to</h2>
+                <h2>Recent Blogs</h2>
                 <div className="indexblog-container">
                     {data.allStrapiBlogPosts.edges.map(article =>(
                         
