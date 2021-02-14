@@ -623,7 +623,7 @@ header{
                     display: grid;
                     place-items: center;
                     height: 75%;
-                    
+
                     p {
                         text-align: center;
                       margin: 0;
@@ -678,7 +678,7 @@ header{
 //Projects Section
 
 .projects-section{
-    background-color: #f7f5f5;
+    background-color: #e4e4e4;
     min-height: 300px;
     padding-top: 30px;
     h2{
@@ -1283,9 +1283,8 @@ position: relative;
     content: '';
     border-radius: 50% 50% 0 0 / 100% 100% 0 0;
     background-color: #4D8CB0;
-    width: 100%;
-    min-width: 2650px;
-    left: -380px;
+    width: 150%;
+    left: -25%;
     text-align: center;
     height: 800px;
  
@@ -1436,7 +1435,9 @@ position: relative;
 .pdf-button{
     background-color: rgba(225,255,255,0.2);
     border: 1px solid white;
-    color: white;
+    a{
+        color: white !important;
+    }
     margin: 0 auto;
     max-width: 400px;
     height: 50px;
@@ -1447,7 +1448,10 @@ position: relative;
     &:hover{
         background-color: rgb(223, 223, 223);
         cursor: pointer;
-        color: black;
+        
+        a{
+            color: black !important; 
+        }
       
     }
 }
