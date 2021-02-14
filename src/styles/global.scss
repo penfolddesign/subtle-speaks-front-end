@@ -1267,6 +1267,8 @@ line-height: 63px;
 .index-blog{
 padding: 40px 0;
 background-color: #4D8CB0;
+background-image: url('../images/research-background.jpg');
+background-size: cover;
 z-index: 1;
 
 h2{
@@ -1283,6 +1285,9 @@ position: relative;
     content: '';
     border-radius: 50% 50% 0 0 / 100% 100% 0 0;
     background-color: #4D8CB0;
+    background-color: #4D8CB0;
+background-image: url('../images/research-background.jpg');
+background-size: cover;
     width: 150%;
     left: -25%;
     text-align: center;
