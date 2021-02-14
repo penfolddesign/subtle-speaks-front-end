@@ -599,7 +599,7 @@ header {
   transition: transform 300ms, -webkit-transform 300ms;
   -webkit-transform: translate3d(0, 83%, 0);
           transform: translate3d(0, 83%, 0);
-  background-color: rgba(0, 90, 141, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .about-us-card-container .card-container .card-image h2 {
@@ -644,7 +644,7 @@ header {
 .about-us-card-container .card-container .card-image .item__body p {
   text-align: center;
   margin: 0;
-  color: white;
+  color: var(--heading-color);
 }
 
 .about-us-card-container .card-container .card-image .item__overlay a:hover ~ .item__overlay .item__body,

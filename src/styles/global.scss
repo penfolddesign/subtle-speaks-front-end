@@ -589,7 +589,7 @@ header{
                 left: 0;
                 transition: transform 300ms;
                 transform: translate3d(0, 83%, 0);
-                background-color:rgba(0, 90, 141, 0.9);
+                background-color:rgba(255, 255, 255, 0.9);
               }
 
               h2 {
@@ -627,7 +627,7 @@ header{
                     p {
                         text-align: center;
                       margin: 0;
-                      color: white;
+                      color: var(--heading-color);
                     }
                   }
                   
