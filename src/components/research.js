@@ -33,7 +33,7 @@ const ResearchSection = () => {
     return (
         <section className="research-section" id="research">
             <div className="container">
-                <h2>"The problem contains the solution."</h2>
+                <h2>The problem contains the solution.</h2>
                 <p className="description-text" style={{textAlign: 'center'}}>
                 We are conducting continuous research to enhance our projects and learn more about the issues we aim to tackle. Read some further research surrounding these societal issues below.
                 </p>
