@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'gatsby'
 import {useStaticQuery, graphql} from 'gatsby'
 import { Icon, InlineIcon } from '@iconify/react';
-import twitterOutlined from '@iconify/icons-ant-design/twitter-outlined';
+import linkedinFilled from '@iconify/icons-ant-design/linkedin-filled';
 import instagramFilled from '@iconify/icons-ant-design/instagram-filled';
 import facebookFilled from '@iconify/icons-ant-design/facebook-filled';
 import mailFilled from '@iconify/icons-ant-design/mail-filled';
@@ -46,8 +46,8 @@ const Footer = () => {
                 <h4>Follow us on our socials</h4>
 
                 <div className="footer-links">
-                <Link to="https://twitter.com/subtlespeaks/" target="_blank">
-              <Icon icon={twitterOutlined}/>
+                <Link to={result.LinkedIn}target="_blank">
+              <Icon icon={linkedinFilled}/>
             </Link>
             <Link to={result.Facebook} target="_blank">
               <Icon icon={facebookFilled}/>
