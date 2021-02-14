@@ -5,6 +5,7 @@ import Moment from "react-moment";
 import OtherLayout from "../components/otherLayout";
 import Markdown from "react-markdown";
 import useSiteMetaData from '../hooks/use-site-metadata';
+import SEO from '../components/seo'
 
 //Social Icons
 import {
@@ -47,7 +48,12 @@ const SingleResearch = ({data, location}) => {
 
     return (
        <OtherLayout>
-
+            <SEO
+            
+            title={research.Title}
+            lang="en"
+            
+            />
             <section className="single-research-container">
                     <div className="research-banner">
                         <div className="content">

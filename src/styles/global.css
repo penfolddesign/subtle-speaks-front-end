@@ -518,6 +518,20 @@ header {
   position: relative;
 }
 
+@media screen and (max-width: 1200px) {
+  .about-us-card-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    max-width: 550px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  .about-us-card-container .card-image {
+    width: 550px !important;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .about-us-card-container {
     -ms-grid-columns: 1fr;
@@ -544,7 +558,8 @@ header {
 
 .about-us-card-container .card-container .card-image {
   height: 400px;
-  width: 412px;
+  width: 100%;
+  max-width: 412px;
   overflow: hidden;
   position: relative;
 }
@@ -658,25 +673,6 @@ header {
   }
   .about-us-card-container .card-container .card-content p {
     text-align: center;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .about-us-card-container {
-    grid-gap: 40px;
-    padding-top: 20px;
-  }
-  .about-us-card-container .flex-reverse .card-image, .about-us-card-container .flex-reverse .card-content {
-    -ms-grid-column: 1 !important;
-        grid-column-start: 1 !important;
-  }
-  .about-us-card-container .flex-reverse .card-image {
-    -ms-grid-row: 1;
-        grid-row-start: 1;
-  }
-  .about-us-card-container .flex-reverse .card-content {
-    -ms-grid-row: 2;
-        grid-row-start: 2;
   }
 }
 
@@ -1605,6 +1601,16 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .contact-section {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .contact-section .contact-image {
+    display: none;
+  }
 }
 
 .contact-section .contact-image {
