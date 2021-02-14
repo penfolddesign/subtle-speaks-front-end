@@ -834,6 +834,8 @@ header{
         overflow: hidden;
 
         img{
+            height: 450px;
+            width: 450px;
             object-fit: cover !important;
         }
     }
@@ -843,6 +845,7 @@ header{
         p{
             font-size: 16px;
             line-height: 20px;
+            height: 80px;
         }
     }
 
@@ -884,11 +887,6 @@ header{
         list-style-type: none;
     }
 
-    @media screen and (max-width: 700px){
-        .article-image{
-            height: 400px;
-        }
-    }
 }
 
 

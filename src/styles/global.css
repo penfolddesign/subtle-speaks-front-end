@@ -831,6 +831,8 @@ header {
 }
 
 .article-container .article-image img {
+  height: 450px;
+  width: 450px;
   -o-object-fit: cover !important;
      object-fit: cover !important;
 }
@@ -838,6 +840,7 @@ header {
 .article-container .article-description p {
   font-size: 16px;
   line-height: 20px;
+  height: 80px;
 }
 
 .article-container .article-categories ul {
@@ -879,12 +882,6 @@ header {
 
 .article-container ul {
   list-style-type: none;
-}
-
-@media screen and (max-width: 700px) {
-  .article-container .article-image {
-    height: 400px;
-  }
 }
 
 .blogheader {
