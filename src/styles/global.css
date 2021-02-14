@@ -82,7 +82,7 @@ html, body {
 }
 
 .container {
-  max-width: 1250px;
+  max-width: 1400px;
   width: 80%;
   margin: 0 auto;
 }
@@ -1579,8 +1579,9 @@ header {
   height: 50px;
   margin: 0 auto;
   border: 0;
-  background-color: white;
-  color: black;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.39);
+  color: white;
   font-size: 18px;
   font-family: inherit;
   text-transform: uppercase;
@@ -1588,6 +1589,7 @@ header {
 
 .epc-banner form button:hover {
   background-color: #dfdfdf;
+  color: black;
 }
 
 .contact-section {
@@ -1975,6 +1977,8 @@ header {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 20px;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .project-boxes .box p {
@@ -1984,6 +1988,13 @@ header {
   font-size: 26px;
   line-height: 24px;
   color: white;
+}
+
+.project-boxes .box:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 @media screen and (max-width: 1100px) {

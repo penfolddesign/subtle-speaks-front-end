@@ -85,7 +85,7 @@ html,body{
 
 
 .container{
-    max-width: 1250px;
+    max-width: 1400px;
     width: 80%;
     margin: 0 auto;
 
@@ -1597,14 +1597,16 @@ position: relative;
             height: 50px;
             margin: 0 auto;
             border: 0;
-            background-color: white;
-            color: black;
+            border: 1px solid white;
+            background-color: rgba(255, 255, 255, 0.39);
+            color: white;
             font-size: 18px;
             font-family: inherit;
             text-transform: uppercase;
 
             &:hover{ 
                 background-color:rgb(223, 223, 223);
+                color: black;
             }
         }
     }
@@ -1994,6 +1996,8 @@ position: relative;
         place-items: center;
         box-sizing: border-box;
         padding: 20px;
+
+        transition: all 0.1s ease-in-out;
         
         p{
             text-align: center;
@@ -2002,6 +2006,11 @@ position: relative;
             font-size: 26px;
             line-height: 24px;
             color: white;
+        }
+
+        &:hover{
+            transform:  translateY(-10px);
+            transition: all 0.1s ease-in-out;
         }
     }
 
