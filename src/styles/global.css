@@ -826,7 +826,7 @@ header {
 }
 
 .article-container .article-image {
-  max-height: 250px;
+  max-height: 450px;
   overflow: hidden;
 }
 
