@@ -37,22 +37,22 @@ const ProjectCCA = ({data}) => {
                         <ProjectBoxContainer project="#FFC2C2">
 
                             <ProjectBox
-                            content="Thought provoking guest talks"
+                            content="Community Connectivity"
                             color="#FF6F6F"
                             
                             />
                             <ProjectBox
-                            content="Practical workshops"
+                            content="Mentorship"
                             color="#FF6F6F"
                             
                             />
                             <ProjectBox
-                            content="Q&A with industry professionals"
+                            content="Health and wellbeing programme"
                             color="#FF6F6F"
                             
                             />
                             <ProjectBox
-                            content="Implementation of up to date policies & procedures"
+                            content="90 second film"
                             color="#FF6F6F"
                             
                             />
