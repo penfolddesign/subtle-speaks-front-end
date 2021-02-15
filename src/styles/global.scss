@@ -2251,15 +2251,27 @@ background-size: cover;
   
 }
 
+
+.epc-project-container{
+
+    background-image: url('../images/coverforprojects.png');
+    background-size: cover;
+    background-position: center;
+
+    @media screen and (max-width: 900px){
+
+        background-image: none;
+    }
+}
+
 .project-main-container{
-    // background-image: url('../images/coverforprojects.png');
-    // background-size: cover;
-    // background-position: center;
+
 
     p{
         margin: 0 auto;
         max-width: 950px;
     }
+
 }
 
 .aces-blurb{
@@ -2294,6 +2306,25 @@ background-size: cover;
     }
 }
 
+
+.cca-blurb{
+    padding-top: 60px;
+    margin: 0 auto;
+
+    p{
+        font-size: 24px !important;
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: bold !important;
+    }
+}
+
+.blurb{
+    p{
+        margin: 10px 0;
+    }
+}
+
 .aces-content{
     padding-top: 60px;
 
@@ -2304,17 +2335,45 @@ background-size: cover;
     }
 }
 
-.project-about{
-    margin-top: -180px;
-    padding-top: 180px;
-    background-color: rgb(243, 243, 243);
+.aces-about{
+
+    background-color: rgb(18, 37, 63);
     p{
         margin: 10px auto;
+        color: white !important;
     }
 }
 
+.project-about{
+    margin-top: -180px;
+    padding-top: 180px;
+    p{
+        margin: 10px auto;
+
+    }
+}
+
+.get-fit-slider{
+    padding: 30px 0;
+}
+
+.pdf-item{
+   padding: 0 10px;
+}
+
+.cca-about-container{
+
+    background-color: #2B3034;
+
+    p{
+        margin: 10px auto;
+        color: white !important;
+    }
+}
+
+
 .project-logo{
-    padding: 20px 0;
+    padding-top: 20px; 
     width: 200px;
     margin: 0 auto;
     img{

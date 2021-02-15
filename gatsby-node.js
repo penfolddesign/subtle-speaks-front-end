@@ -223,3 +223,19 @@ exports.onCreateNode = async ({ node, actions, store, cache }) => {
   //     });
   //   }
   // };
+
+
+  exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+    if (stage === "build-html") {
+      actions.setWebpackConfig({
+        module: {
+          rules: [
+            {
+              test: /react-lightbox-component/,
+              use: loaders.null(),
+            },
+          ],
+        },
+      })
+    }
+  }

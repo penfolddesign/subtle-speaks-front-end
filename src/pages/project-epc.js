@@ -26,7 +26,7 @@ const ProjectEPC = ({data}) => {
                />
 
         
-               <div className="project-main-container">
+               <div className="project-main-container epc-project-container">
                    <div className="project-blurb">
                       <div className="container">
                       <Markdown source={result.MainContent} escapeHtml={false}/>
@@ -61,7 +61,7 @@ const ProjectEPC = ({data}) => {
                         </ProjectBoxContainer>
                     </div>
                  
-                   <div className="project-about">
+                   <div className="project-about epc-about">
                        <div className="container">
                        <Markdown source={result.Description} escapeHtml={false}/>
                    
