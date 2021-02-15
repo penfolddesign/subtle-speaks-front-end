@@ -11,7 +11,7 @@ const IndexBlog = () => {
     const data = useStaticQuery(graphql`
     
   {  
-        allStrapiBlogPosts(limit: 3){
+    allStrapiBlogPosts(sort: {order: DESC, fields: PublishedAt}, limit: 3){
             totalCount
             edges {
               node {

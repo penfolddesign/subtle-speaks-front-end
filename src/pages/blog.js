@@ -17,7 +17,7 @@ import SEO from "../components/seo";
 export const pageQuery = graphql`
 
 query BlogQuery {
-  allStrapiBlogPosts{
+  allStrapiBlogPosts(sort: {order: DESC, fields: PublishedAt}){
     edges {
       node {
 
