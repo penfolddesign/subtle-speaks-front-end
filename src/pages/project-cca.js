@@ -87,26 +87,26 @@ const ProjectCCA = ({data}) => {
                    </div>
                 
                      <div className="container">
-                     <ProjectBoxContainer project="#FFC2C2">
+                     <ProjectBoxContainer project="#B45C5A">
 
                     <ProjectBox
                     content="Community Connectivity"
-                    color="#FF6F6F"
+                    color="#FF5757"
 
                     />
                     <ProjectBox
                     content="Mentorship"
-                    color="#FF6F6F"
+                    color="#FF5757"
 
                     />
                     <ProjectBox
                     content="Health and wellbeing programme"
-                    color="#FF6F6F"
+                    color="#FF5757"
 
                     />
                     <ProjectBox
                     content="90 second film"
-                    color="#FF6F6F"
+                    color="#FF5757"
 
                     />
 
