@@ -3,7 +3,7 @@ import {useStaticQuery, graphql} from 'gatsby'
 import {Link} from 'gatsby'
 import Img from 'gatsby-image/withIEPolyfill'
 import Moment from 'react-moment';
-import { Icon, InlineIcon } from '@iconify/react';
+import { Icon } from '@iconify/react';
 import clockCircleOutlined from '@iconify/icons-ant-design/clock-circle-outlined';
 
 const IndexBlog = () => {

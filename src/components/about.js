@@ -2,6 +2,7 @@ import React from 'react'
 import {graphql, useStaticQuery} from 'gatsby';
 import Img from 'gatsby-image/withIEPolyfill';
 import Partners from './partners';
+import Markdown from 'react-markdown'
 
 const About = () => {
 
@@ -117,7 +118,7 @@ const About = () => {
                                          <h2 id="vision" aria-hidden="true">Values</h2>
 
                                         <div className="item__body">
-                                            <p>{info.node.OurSolution}</p>
+                                            <Markdown source={info.node.OurSolution} escapeHtml={false}/>
                                         </div>
                                  </div> 
                             </div>

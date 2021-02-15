@@ -105,9 +105,9 @@ return(
 
       <div className="mobile-socials">
           <ul>
-            <li><a href={result.Facebook} target="_blank"> <Icon icon={facebookFilled}/></a></li>
-            <li><a href={result.Instagram} target="_blank"> <Icon icon={instagramFilled}/></a></li>
-            <li><a href={result.LinkedIn} target="_blank"> <Icon icon={linkedinFilled}/></a></li>
+            <li><a href={result.Facebook} target="_blank" rel="noreferrer"> <Icon icon={facebookFilled}/></a></li>
+            <li><a href={result.Instagram} target="_blank" rel="noreferrer"> <Icon icon={instagramFilled}/></a></li>
+            <li><a href={result.LinkedIn} target="_blank" rel="noreferrer"> <Icon icon={linkedinFilled}/></a></li>
           </ul>
       </div>
     </div>

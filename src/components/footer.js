@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'gatsby'
 import {useStaticQuery, graphql} from 'gatsby'
-import { Icon, InlineIcon } from '@iconify/react';
+import { Icon } from '@iconify/react';
 import linkedinFilled from '@iconify/icons-ant-design/linkedin-filled';
 import instagramFilled from '@iconify/icons-ant-design/instagram-filled';
 import facebookFilled from '@iconify/icons-ant-design/facebook-filled';

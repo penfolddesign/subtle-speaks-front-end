@@ -25,46 +25,54 @@ const ProjectEPC = ({data}) => {
                
                />
 
-               <div className="container">
+        
                <div className="project-main-container">
                    <div className="project-blurb">
-                       <Markdown source={result.MainContent} escapeHtml={false}/>
+                      <div className="container">
+                      <Markdown source={result.MainContent} escapeHtml={false}/>
+                      </div>
                    </div>
                 
-                        <ProjectBoxContainer project="#FED27D">
+                    <div className="container">
+                    <ProjectBoxContainer project="#FED27D">
 
-                            <ProjectBox
-                            content="Thought provoking guest talks"
-                            color="#FEA800"
-                            
-                            />
-                            <ProjectBox
-                            content="Practical workshops"
-                            color="#FEA800"
-                            
-                            />
-                            <ProjectBox
-                            content="Q&A with industry professionals"
-                            color="#FEA800"
-                            
-                            />
-                            <ProjectBox
-                            content="Implementation of up to date policies & procedures"
-                            color="#FEA800"
-                            
-                            />
+                        <ProjectBox
+                        content="Thought provoking guest talks"
+                        color="#FEC600"
+
+                        />
+                        <ProjectBox
+                        content="Practical workshops"
+                        color="#FEC600"
+
+                        />
+                        <ProjectBox
+                        content="Q&A with industry professionals"
+                        color="#FEC600"
+
+                        />
+                        <ProjectBox
+                        content="Implementation of up to date policies & procedures"
+                        color="https://subtle-speaks-front-end.netlify.app/"
+                        color="#FEC600"
+                        />
 
 
                         </ProjectBoxContainer>
+                    </div>
                  
                    <div className="project-about">
+                       <div className="container">
                        <Markdown source={result.Description} escapeHtml={false}/>
-                   </div>
+                   
                    <div className="project-logo">
-                       <img src="https://res.cloudinary.com/dhh2ejp7p/image/upload/v1613239429/epclogo_450_dc2f8948cf.png" alt="Project EPC Logo"/>
+                   <img src="https://res.cloudinary.com/dhh2ejp7p/image/upload/v1613239429/epclogo_450_dc2f8948cf.png" alt="Project EPC Logo"/>
+                       </div>
                    </div>
+                   </div>
+             
                </div>
-               </div>
+         
                <div className="epc-banner" style={{backgroundImage: 'url(https://res.cloudinary.com/dhh2ejp7p/image/upload/v1613310339/epc_signup_7b6931bd47.jpg)' }}>
                    <div className="container">
                    <div className="epc-content">

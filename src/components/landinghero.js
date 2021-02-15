@@ -30,8 +30,25 @@ const LandingHero = () => {
                     <div className="hero-content">
                         <h1>{result.Title}<span style={{color: '#2BB2FF'}}>.</span></h1>
                         <span className="subheading">RECRUITMENT & WELLBEING</span>
-                        <a href="/#about" className="landing-cta">{result.ButtonText}</a>
+                        {/* <a href="/#about" className="landing-cta">{result.ButtonText}</a> */}
+                    
+            
             </div>
+
+
+
+<div id="wrapper">
+<Link to="/#about">
+  <div id="wrapper-inner">
+<div id="scroll-down">
+  <span class="arrow-down">
+  </span>
+
+</div>
+  </div>
+  </Link>
+  </div>
+
      
 
         </section>

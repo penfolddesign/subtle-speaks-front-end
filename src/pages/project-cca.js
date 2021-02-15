@@ -28,49 +28,58 @@ const ProjectCCA = ({data}) => {
                
                />
 
-               <div className="container">
+           
                <div className="project-main-container">
                    <div className="project-blurb">
-                       <Markdown source={result.MainContent} escapeHtml={false}/>
+                       <div className="container"><Markdown source={result.MainContent} escapeHtml={false}/></div>
                    </div>
                 
-                        <ProjectBoxContainer project="#FFC2C2">
+                     <div className="container">
+                     <ProjectBoxContainer project="#FFC2C2">
 
-                            <ProjectBox
-                            content="Community Connectivity"
-                            color="#FF6F6F"
-                            
-                            />
-                            <ProjectBox
-                            content="Mentorship"
-                            color="#FF6F6F"
-                            
-                            />
-                            <ProjectBox
-                            content="Health and wellbeing programme"
-                            color="#FF6F6F"
-                            
-                            />
-                            <ProjectBox
-                            content="90 second film"
-                            color="#FF6F6F"
-                            
-                            />
+<ProjectBox
+content="Community Connectivity"
+color="#FF6F6F"
+
+/>
+<ProjectBox
+content="Mentorship"
+color="#FF6F6F"
+
+/>
+<ProjectBox
+content="Health and wellbeing programme"
+color="#FF6F6F"
+
+/>
+<ProjectBox
+content="90 second film"
+color="#FF6F6F"
+
+/>
 
 
-                        </ProjectBoxContainer>
+</ProjectBoxContainer>
+                     </div>
                  
-                   <div className="project-about cca-about">
+                   <div className="project-about">
                  
-                       <div className="text"><Markdown source={result.Description} escapeHtml={false}/></div>
-                       <img src="https://res.cloudinary.com/dhh2ejp7p/image/upload/v1613238413/football_b4f8e29f94.jpg" alt="CCA Football"/>
-                   </div>
-
-                   <div className="project-logo">
+              <div className="container">
+                            <div className="cca-about">
+                            <div className="text"><Markdown source={result.Description} escapeHtml={false}/></div>
+                                        <img src="https://res.cloudinary.com/dhh2ejp7p/image/upload/v1613238413/football_b4f8e29f94.jpg" alt="CCA Football"/>
+                            </div>
+                        
+                       <div className="project-logo">
                        <img src="https://res.cloudinary.com/dhh2ejp7p/image/upload/v1613239429/ccalogo_450_dad1f08a25.png" alt="Project EPC Logo"/>
                    </div>
+              </div>
+                   
+                   </div>
+
+                   
                </div>
-               </div>
+            
                <div class="cca-banner" style={{backgroundImage: 'url(https://res.cloudinary.com/dhh2ejp7p/image/upload/v1613238935/solihullmoors_0a7a6d7d68.jpg)' }}>
                    <div class="container">
                        <h3>Get Fit with Solihull Moors</h3>
