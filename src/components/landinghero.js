@@ -29,7 +29,7 @@ const LandingHero = () => {
                
                     
                     <div className="hero-content">
-                        <Typing speed={5}>
+                        <Typing speed={50}>
                         <h1>{result.Title}<span style={{color: '#2BB2FF'}}>.</span></h1>
                         </Typing>
                         <span className="subheading">RECRUITMENT & WELLBEING</span>
