@@ -3,6 +3,7 @@ import {Link} from 'gatsby'
 import Img from 'gatsby-image'
 import {useStaticQuery, graphql} from 'gatsby'
 import BackgroundImage from '../images/rave-header2.jpg'
+import Typing from 'react-typing-animation';
 
 const LandingHero = () => {
 
@@ -28,7 +29,9 @@ const LandingHero = () => {
                
                     
                     <div className="hero-content">
+                        <Typing speed={5}>
                         <h1>{result.Title}<span style={{color: '#2BB2FF'}}>.</span></h1>
+                        </Typing>
                         <span className="subheading">RECRUITMENT & WELLBEING</span>
                         {/* <a href="/#about" className="landing-cta">{result.ButtonText}</a> */}
                     
