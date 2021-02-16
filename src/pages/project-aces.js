@@ -7,7 +7,7 @@ import ProjectBox from '../components/projects/ProjectBox'
 import ProjectBoxContainer from '../components/projects/ProjectBoxContainer'
 
 import ProjectImage from '../images/aces-banner.jpg'
-
+import MailchimpComponent from '../components/MailchimpComponent'
 import Lightbox from 'react-lightbox-component';
 
 import "react-lightbox-component/build/css/index.css";
@@ -126,24 +126,7 @@ color="#5388B8"
                    <div className="epc-content">
                        <h3>Join the movement</h3>
                        <p>Please enter your name and e-mail addess below to recieve all information surrounding Project ACES.</p>
-                       <form action="">
-
-                           <div className="form-container">
-
-                            <div className="form-group">
-                                    <label htmlFor="name">Name</label>
-                                    <input type="text" name="name"/>
-                                </div>
-
-                                <div className="form-group">
-                                    <label htmlFor="email">Email</label>
-                                    <input type="email" name="email"/>
-                                </div>
-
-                           </div>
-
-                           <button type="submit">Sign Up</button>
-                       </form>
+                        <MailchimpComponent/>
                        <span>By clicking signup you agree to allow us to send you e-mails regarding Project ACES and other Subtle Speaks information.</span>
                    </div>
                    </div>

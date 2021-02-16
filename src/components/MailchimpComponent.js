@@ -26,7 +26,7 @@ export class MailchimpComponent extends Component {
 
         console.log('submit', this.state)
 
-        addToMailchimp(this.state.email, this.state)
+        addToMailchimp(this.state.email, this.state.name, this.state)
             .then(({ msg, result }) => {
                 console.log('msg', `${result}: ${msg}`)
 
@@ -50,9 +50,40 @@ export class MailchimpComponent extends Component {
 
     render() {
         return (
-            <div>
-                
+
+
+
+            <form onSubmit={this._handleSubmit}>
+
+            <div className="form-container">
+
+             <div className="form-group">
+                     <label htmlFor="name">Name</label>
+                     <input
+            type="text"
+            onChange={this._handleChange}
+            placeholder="name"
+            name="name"
+        />
+                 </div>
+
+                 <div className="form-group">
+                     <label htmlFor="email">Email</label>
+                       
+        <input
+            type="email"
+            onChange={this._handleChange}
+            placeholder="email"
+            name="email"
+        />
+                 </div>
+
             </div>
+            <div className="success" style={{marginTop: '10px', textAlign: 'center'}}>
+                                {this.state.feedbackMsg && <span>{this.state.feedbackMsg}</span>}
+                            </div>
+            <button type="submit">Sign Up</button>
+        </form>
         )
     }
 }

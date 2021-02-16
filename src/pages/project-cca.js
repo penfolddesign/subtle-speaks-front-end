@@ -8,7 +8,6 @@ import ProjectBoxContainer from '../components/projects/ProjectBoxContainer'
 
 import ProjectImage from '../images/cca-banner.jpeg'
 
-
 import filePDF from '../images/GetFitWithSolihullMoors.pdf'
 
 import Slider from 'react-slick'

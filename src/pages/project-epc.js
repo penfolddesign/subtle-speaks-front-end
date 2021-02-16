@@ -5,7 +5,7 @@ import Markdown from 'react-markdown'
 import {graphql} from 'gatsby';
 import ProjectBox from '../components/projects/ProjectBox'
 import ProjectBoxContainer from '../components/projects/ProjectBoxContainer'
-
+import MailchimpComponent from '../components/MailchimpComponent'
 import ProjectImage from '../images/epc-banner.jpg'
 
 const ProjectEPC = ({data}) => {
@@ -78,24 +78,7 @@ const ProjectEPC = ({data}) => {
                    <div className="epc-content">
                        <h3>Signup for the newsletter</h3>
                        <p>Please enter your name and e-mail addess below to recieve all information surrounding Project EPC.</p>
-                       <form action="">
-
-                           <div className="form-container">
-
-                            <div className="form-group">
-                                    <label htmlFor="name">Name</label>
-                                    <input type="text" name="name"/>
-                                </div>
-
-                                <div className="form-group">
-                                    <label htmlFor="email">Email</label>
-                                    <input type="email" name="email"/>
-                                </div>
-
-                           </div>
-
-                           <button type="submit">Sign Up</button>
-                       </form>
+                       <MailchimpComponent/>
                        <span>By clicking signup you agree to allow us to send you e-mails regarding Project EPC and other Subtle Speaks information.</span>
                    </div>
                    </div>
