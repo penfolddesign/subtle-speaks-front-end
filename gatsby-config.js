@@ -58,5 +58,12 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-anchor-links`,   
+    {
+      resolve: `gatsby-plugin-mailchimp`,
+      options:{
+
+        endpoint: `https://subtle-speaks.us1.list-manage.com/subscribe/post?u=dc54345983df2d540bd007e05&amp;id=be39c346a2`,
+      },
+    }
   ],
 }

@@ -29,7 +29,7 @@ const LandingHero = () => {
                
                     
                     <div className="hero-content">
-                        <Typing speed={50}>
+                        <Typing speed={100}>
                         <h1>{result.Title}<span style={{color: '#2BB2FF'}}>.</span></h1>
                         </Typing>
                         <span className="subheading">RECRUITMENT & WELLBEING</span>
@@ -40,17 +40,15 @@ const LandingHero = () => {
 
 
 
-<div id="wrapper">
-<Link to="/#about">
-  <div id="wrapper-inner">
-<div id="scroll-down">
-  <span class="arrow-down">
-  </span>
 
+<Link to="/#about" style={{position: 'absolute', bottom: '100px'}}>
+<div class="chevron-container">
+  <div class="chevron"></div>
+  <div class="chevron"></div>
+  <div class="chevron"></div>
 </div>
-  </div>
+
   </Link>
-  </div>
 
      
 
