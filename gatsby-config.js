@@ -57,6 +57,6 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
     `gatsby-plugin-transition-link`,
-    `gatsby-plugin-anchor-links`,
+    `gatsby-plugin-anchor-links`,   
   ],
 }
