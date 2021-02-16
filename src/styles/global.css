@@ -1107,10 +1107,16 @@ header {
   max-height: 400px;
   text-align: center;
   padding-bottom: 30px;
+  max-width: 450px;
+  margin: 0 auto;
 }
 
 .blog-content .blog-image img {
   margin: 0 auto;
+  max-width: 450px;
+  max-height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (max-width: 700px) {
@@ -1118,8 +1124,13 @@ header {
     max-width: 90%;
     padding: 40px 0;
   }
+  .blog-content .blog-image {
+    max-height: 450px;
+    overflow: hidden;
+  }
   .blog-content .blog-image img {
     max-width: 100% !important;
+    max-height: 450px;
   }
   .blog-content .blog-image .gatsby-image-wrapper {
     width: 100% !important;

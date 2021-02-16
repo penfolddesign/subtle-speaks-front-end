@@ -1291,9 +1291,15 @@ header{
         max-height: 400px;
         text-align: center;
         padding-bottom: 30px;
+        max-width: 450px; 
+        margin: 0 auto;
+        
 
         img{
             margin: 0 auto;
+            max-width: 450px; 
+            max-height: 400px;
+            object-fit: cover;
 
         }
     }
@@ -1304,8 +1310,13 @@ header{
         padding: 40px 0;
 
         .blog-image{
+
+            max-height: 450px;
+            overflow: hidden;
+
             img{
                 max-width: 100% !important;
+                max-height: 450px;
             }
 
             .gatsby-image-wrapper{

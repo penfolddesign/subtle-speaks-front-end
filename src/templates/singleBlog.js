@@ -36,11 +36,7 @@ export const query = graphql`
             Content
             PublishedAt
             CoverImage {
-                childImageSharp {
-                  fixed (quality: 100){
-                  ...GatsbyImageSharpFixed
-                  }
-                }
+                publicURL
               }
 
 
@@ -98,7 +94,7 @@ const SingleBlog = ({data, location}) => {
                 </div>
             
                 <div className="blog-image">
-                    <Img fixed={blog.CoverImage.childImageSharp.fixed}/>
+                    <img src={blog.CoverImage.publicURL} alt=""/>
                 </div>
             
 
