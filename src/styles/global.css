@@ -2133,6 +2133,19 @@ header {
   margin-bottom: 30px;
 }
 
+.aces-box-container {
+  padding-top: 50px;
+}
+
+.aces-box-container p {
+  text-align: center;
+  color: black;
+}
+
+.aces-box-container .project-boxes {
+  padding-top: 30px;
+}
+
 .aces-about {
   background-color: #12253f;
 }
