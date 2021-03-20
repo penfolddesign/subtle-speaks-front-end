@@ -50,8 +50,7 @@ const ACES = (props) => {
             <ProjectMain
             
             title="Project ACES"
-            description="Improving the quality of nightlife by creating a zero-tolerance approach to
-            sexual assault and sexual harassment."
+            description="Through our ‘A.C.E.S’ programme we aim to improve the quality of nightlife by assisting the shift in attitude towards sexual assault & sexual harassment."
             image={result.ProjectImage.publicURL}
             
             />

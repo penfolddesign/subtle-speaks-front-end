@@ -33,11 +33,13 @@ const IndexPage = () => {
     <Layout>
       <SEO  title="Home"/>
       <LandingHero/>
-      <About/>
+      <Projects/>
+    
 
   
-      <Projects/>
+ 
       <ResearchSection/>
+      <About/>
       <IndexBlog/>
       {/* <SocialSection/> */}
     </Layout>
